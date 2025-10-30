@@ -1,64 +1,65 @@
-🏠 Bengaluru House Price Prediction using Linear Regression
+# 🏠 Bengaluru House Price Prediction
 
-This project aims to predict house prices in Bengaluru based on features like location, total square feet, number of bathrooms, and BHK using Linear Regression.
-The model is built and analyzed entirely in Jupyter Notebook, focusing on EDA (Exploratory Data Analysis), data cleaning, and model training.
+A Machine Learning project that predicts **house prices in Bengaluru** based on factors like location, square footage, number of bedrooms (BHK), and bathrooms.  
+This project focuses on **data preprocessing, feature engineering, outlier removal, and regression modeling** for accurate price estimation.
 
-🚀 Project Overview
+---
 
-Buying or selling a house in Bengaluru can be confusing due to varying prices across locations and amenities.
-This project uses machine learning to analyze historical data and predict accurate property prices.
+## 🚀 Overview
 
-🧩 Steps Involved
-1️⃣ Data Cleaning
+The goal is to build a **machine learning model** that predicts Bengaluru house prices with high accuracy.  
+Currently focused on ML and analysis — later to be expanded into a **full-stack web app**.
 
-Handled missing values and incorrect entries
+---
 
-Removed outliers for accurate model training
+## 🧰 Tech Stack
 
-Processed and formatted columns for analysis
+- 🐍 Python  
+- 🧮 NumPy  
+- 🧾 Pandas  
+- 📈 Matplotlib  
+- 🤖 Scikit-learn  
 
-2️⃣ Exploratory Data Analysis (EDA)
+---
 
-Visualized relationships between area, location, and price
+## 🧹 Data Preprocessing
 
-Used scatter plots, histograms, and correlation heatmaps
+- Handled missing values in key columns.  
+- Extracted BHK count from `size`.  
+- Converted sqft ranges to numeric averages.  
+- Added `price_per_feet` feature.  
+- Simplified rare locations (≤10 entries → “other”).  
+- Removed outliers based on sqft/BHK and price-per-sqft.
 
-Extracted key insights from Bengaluru’s housing trends
+---
 
-3️⃣ Feature Engineering
+## 🤖 Model Performance
 
-Converted categorical features (like location) using encoding
+| Model | R² Score | Notes |
+|--------|-----------|-------|
+| Linear Regression | 0.8296 | Baseline model |
+| Lasso Regression | 0.8199 | Feature selection (L1) |
+| **Ridge Regression** | **0.8297** | Best stability (L2) |
 
-Normalized numerical features
+✅ **Best Model:** Ridge Regression  
+📊 Explains ~83% variance in house prices.
 
-Created new relevant features where necessary
+---
 
-4️⃣ Model Training
+## 🔮 Future Enhancements
 
-Implemented Linear Regression using scikit-learn
+- 🌐 Frontend: React / Bootstrap web interface  
+- ⚙️ Backend: Flask / FastAPI API  
+- 💾 Deployment: Render / Streamlit / Hugging Face Spaces  
+- 📈 Dashboard: Plotly / Streamlit visualizations  
+- 🧩 More features: Amenities, distance, furnishing, etc.
 
-Split data into training and test sets
+---
 
-Evaluated performance with R² score and Mean Squared Error
+## ✨ Author
 
-📊 Tech Stack
-
-Language: Python 🐍
-
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-
-Environment: Jupyter Notebook
-
-📈 Results
-
-The Linear Regression model successfully predicts approximate house prices with reasonable accuracy.
-Model metrics (R² score and error values) demonstrate the effectiveness of regression for continuous value prediction.
-
-💡 Future Scope
-
-Implement Flask backend for real-time predictions
-
-Add a React.js frontend for user-friendly input and output visualization
-
-👨‍💻 Author
-Sujal Jadhav (@sujaljadhav14)
+**👤 Sujal Jadhav**  
+🎓 B.E. Artificial Intelligence & Data Science @ Terna Engineering College  
+💻 Passionate about ML, Python & Full Stack Development  
+📧 [sujaljadhav14@gmail.com](mailto:sujaljadhav14@gmail.com)  
+🌐 [GitHub: sujaljadhav14](https://github.com/sujaljadhav14)
