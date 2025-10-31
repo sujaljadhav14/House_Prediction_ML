@@ -1,0 +1,52 @@
+# Git ignore for Bengaluru House Price project
+# Ignore python bytecode, caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and Conda/Anaconda project files
+env/
+venv/
+.venv/
+venv*/
+ENV/
+.conda/
+anaconda-project.yml
+anaconda_projects/
+
+# Jupyter Notebook checkpoints and outputs
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+logs/
+*.log
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Test / coverage
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+
+
+# Misc
+*.swp
+
+# If you want to keep certain files that match the patterns above, you can
+# explicitly allow them. Example to keep a specific model file:
+# !models/keep_this_model.pkl
