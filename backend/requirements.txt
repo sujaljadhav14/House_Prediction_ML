@@ -1,0 +1,7 @@
+
+flask>=2.0.0
+flask-cors
+pandas
+scikit-learn==1.6.1
+numpy
+gunicorn

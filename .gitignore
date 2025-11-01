@@ -1,14 +1,30 @@
-# Git ignore for Bengaluru House Price project
-# Ignore python bytecode, caches and build artifacts
+# Python backend
 __pycache__/
 *.py[cod]
 *$py.class
+backend/venv/
+backend/env/
+backend/__pycache__/
+backend/*.pyc
 
-# Virtual environments and Conda/Anaconda project files
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/coverage/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Virtual environments and Conda
 env/
 venv/
 .venv/
-venv*/
 ENV/
 .conda/
 anaconda-project.yml
@@ -47,6 +63,27 @@ coverage.xml
 # Misc
 *.swp
 
-# If you want to keep certain files that match the patterns above, you can
-# explicitly allow them. Example to keep a specific model file:
-# !models/keep_this_model.pkl
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
